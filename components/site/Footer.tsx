@@ -1,0 +1,41 @@
+import Link from "next/link";
+
+export function Footer() {
+  return (
+    <footer className="mt-32 border-t border-[var(--color-border-subtle)]">
+      <div className="mx-auto max-w-[1200px] px-8 py-16 grid gap-8 md:grid-cols-4">
+        <div>
+          <div className="font-display text-xl font-black">gloood<span className="text-[var(--color-accent-2)]">.</span></div>
+          <p className="mt-3 text-sm text-[var(--color-muted)]">Websites that convert. Ads that compound.</p>
+        </div>
+        <div>
+          <h4 className="text-xs uppercase tracking-widest text-[var(--color-muted)] font-display font-medium">Services</h4>
+          <ul className="mt-3 space-y-2 text-sm">
+            <li><Link href="/services/website-design">Launch</Link></li>
+            <li><Link href="/services/performance-ads">Grow</Link></li>
+            <li><Link href="/services/launch-grow">Launch + Grow</Link></li>
+            <li><Link href="/services/revamp">Revamp</Link></li>
+          </ul>
+        </div>
+        <div>
+          <h4 className="text-xs uppercase tracking-widest text-[var(--color-muted)] font-display font-medium">Company</h4>
+          <ul className="mt-3 space-y-2 text-sm">
+            <li><Link href="/work">Work</Link></li>
+            <li><Link href="/about">About</Link></li>
+            <li><Link href="/contact">Contact</Link></li>
+          </ul>
+        </div>
+        <div>
+          <h4 className="text-xs uppercase tracking-widest text-[var(--color-muted)] font-display font-medium">Contact</h4>
+          <ul className="mt-3 space-y-2 text-sm text-[var(--color-muted)]">
+            <li>surpreet@gloood.in</li>
+            <li>Mumbai, IN</li>
+          </ul>
+        </div>
+      </div>
+      <div className="border-t border-[var(--color-border-subtle)] px-8 py-6 text-xs text-[var(--color-muted)] mx-auto max-w-[1200px]">
+        © {new Date().getFullYear()} gloood. All rights reserved.
+      </div>
+    </footer>
+  );
+}
