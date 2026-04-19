@@ -12,6 +12,7 @@
 }
 
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 @theme {
   --color-bg: #0A0B10;
