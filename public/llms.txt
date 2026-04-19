@@ -1,0 +1,30 @@
+# gloood
+
+> Website design and performance marketing for ambitious SMBs. We build sites that convert and run the paid media to fill them — one small senior team, end to end.
+
+## Site
+
+- [Home](https://gloood.in/): overview of gloood, services, featured work
+- [About](https://gloood.in/about): how we think, our approach to outcomes over outputs
+- [Work](https://gloood.in/work): full list of case studies
+- [Contact](https://gloood.in/contact): get in touch to discuss a project
+
+## Services
+
+- [Launch — Website Design](https://gloood.in/services/website-design): new websites, 5–7 pages, design + build + copy, 2–3 week turnaround on Next.js
+- [Grow — Performance Ads](https://gloood.in/services/performance-ads): Meta and Google Ads management for Indian SMBs, creative + targeting + tracking
+- [Launch + Grow (Bundle)](https://gloood.in/services/launch-grow): website plus 90 days of paid ads, delivered as one engagement
+- [Revamp](https://gloood.in/services/revamp): redesign and CRO for underperforming sites, keeps SEO intact
+
+## Case studies
+
+- [iORA Dental](https://gloood.in/work/iora-dental): new website plus lead pipeline — 2.8× monthly bookings, 71% CPA reduction
+- [King of Kurry](https://gloood.in/work/king-of-kurry): restaurant website and delivery-focused ads
+- [Prime Video](https://gloood.in/work/prime-video): landing page and performance campaign
+- [Skycom](https://gloood.in/work/skycom): B2B website revamp
+- [TrustTec](https://gloood.in/work/trusttec): lead generation site and ad stack
+
+## Contact
+
+- Email: hello@gloood.in
+- Site: https://gloood.in

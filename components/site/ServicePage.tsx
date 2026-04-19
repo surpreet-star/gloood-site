@@ -4,11 +4,48 @@ import type { Service } from "@/lib/content";
 import { getCaseStudies } from "@/lib/content";
 import { CaseStudyCard } from "./CaseStudyCard";
 import { QuoteForm } from "./QuoteForm";
+import { JsonLd } from "@/components/seo/JsonLd";
+
+const SITE_URL = "https://gloood.in";
 
 export async function ServicePage({ service }: { service: Service }) {
   const studies = (await getCaseStudies()).slice(0, 3);
+
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: `${service.name} — ${service.tagline}`,
+    description: service.summary,
+    provider: { "@id": `${SITE_URL}/#organization` },
+    areaServed: "IN",
+    url: `${SITE_URL}/services/${service.slug}`,
+  };
+
+  const faqSchema = service.faq.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: service.faq.map(f => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  } : null;
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+      { "@type": "ListItem", position: 2, name: "Services", item: SITE_URL },
+      { "@type": "ListItem", position: 3, name: service.name, item: `${SITE_URL}/services/${service.slug}` },
+    ],
+  };
+
+  const schemas = faqSchema ? [serviceSchema, faqSchema, breadcrumbSchema] : [serviceSchema, breadcrumbSchema];
+
   return (
     <>
+      <JsonLd data={schemas}  />
       <section className="mx-auto max-w-[1200px] px-8 py-24 md:py-32">
         <div className="text-xs uppercase tracking-widest text-[var(--color-accent-2)] font-display font-medium">{service.name}</div>
         <h1 className="mt-4 text-5xl md:text-7xl">{service.tagline}</h1>

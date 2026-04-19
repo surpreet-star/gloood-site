@@ -1,0 +1,314 @@
+# gloood — full content dump for LLM ingestion
+
+Website design and performance marketing for ambitious SMBs. One small senior team. We build websites that convert, and run the paid media to fill them.
+
+Site: https://gloood.in
+Contact: hello@gloood.in
+
+---
+
+# About gloood
+
+We build sites. We run ads. That's it.
+
+gloood is a small, senior team focused on two things: websites that convert, and the paid media to fill them. No strategy decks that never ship. No layers of account managers. Just design, build, and growth — done by the people doing the work.
+
+## How we think
+
+- **Outcomes over outputs.** A beautiful site nobody converts on is a waste. We measure success in qualified leads and revenue, not design awards.
+- **Speed matters.** Most SMBs don't have 6 months to launch a site. We ship in weeks, then iterate live based on real data.
+- **Transparent reporting.** Every client gets direct access to the ad accounts, analytics, and weekly reports. No black boxes.
+- **Honest scoping.** If you don't need what we sell, we'll tell you. If a cheaper solution will work, we'll point you to it.
+
+---
+
+# Service: Launch — Website Design
+
+URL: https://gloood.in/services/website-design
+Tagline: New website, built to convert from day one.
+Summary: 5–7 pages, design + build + copy. 2–3 week turnaround.
+
+## Includes
+- Discovery + wireframes
+- Custom design in Figma
+- Next.js build + CMS setup
+- Copywriting for all pages
+- SEO setup + analytics
+
+## Deliverables
+- Fully launched site on your domain
+- Analytics dashboard access
+- 30-day post-launch support
+
+## Detail
+
+gloood is a website design agency in Mumbai building conversion-focused sites for SMBs across India. We ship fast Next.js websites with clean code, real copy, and analytics wired from day one.
+
+Your website is your best salesperson — when it's built right. We focus on what actually moves the needle: speed, clear messaging, and conversion paths that lead to qualified enquiries.
+
+Every Launch site ships with analytics wired end-to-end, so from day one you can see exactly where your leads come from.
+
+## FAQ
+
+Q: How long does it take?
+A: Typically 2–3 weeks from kickoff to launch.
+
+Q: Do you work with our existing brand?
+A: Yes — we can extend your current brand, or refresh if needed.
+
+Q: What if we need more than 7 pages?
+A: We'll scope additional pages separately. Most SMB sites sit in the 5–7 range.
+
+---
+
+# Service: Grow — Performance Ads
+
+URL: https://gloood.in/services/performance-ads
+Tagline: Meta + Google Ads. Measurable growth, monthly.
+Summary: Retainer-based paid media management. Creative, targeting, optimization, weekly reporting.
+
+## Includes
+- Meta Ads (Facebook + Instagram)
+- Google Ads (Search + Performance Max)
+- Creative production (static + short-form video)
+- Weekly reporting + monthly review
+- Conversion tracking setup
+
+## Deliverables
+- Ads live within 10 days of kickoff
+- Monthly ROAS + CAC report
+- Quarterly strategy review
+
+## Detail
+
+gloood is a performance marketing agency running Meta ads and Google ads for Indian SMBs, with creative, targeting, and tracking handled end to end by one team.
+
+Performance marketing isn't magic — it's compounding small wins. We manage your paid media end to end: creative, targeting, bidding, and reporting you can actually read.
+
+No black boxes. Every month you'll know exactly what worked, what didn't, and what we're changing next.
+
+## FAQ
+
+Q: What's the minimum ad spend?
+A: We recommend starting at ₹1L/month media spend to see meaningful signal.
+
+Q: Do you lock us in?
+A: Month-to-month. Three-month initial period to prove results.
+
+Q: Can you run LinkedIn / YouTube ads too?
+A: Yes — scoped as add-ons.
+
+---
+
+# Service: Launch + Grow (Bundle)
+
+URL: https://gloood.in/services/launch-grow
+Tagline: Build the site. Fill the site. One team, one roadmap.
+Summary: Website build (Launch) + 90 days of performance marketing (Grow), bundled.
+
+## Includes
+- Full Launch scope (website + copy + setup)
+- 90 days of Meta + Google Ads management
+- Creative production for launch campaign
+- Weekly optimization during the 90 days
+- Handoff or continued retainer after day 90
+
+## Deliverables
+- Launched site + live campaigns
+- 90-day performance report
+- Optional: rollover to monthly Grow retainer
+
+## Detail
+
+Launch + Grow is our website plus paid ads bundle: a new Next.js site and 90 days of Meta and Google Ads, delivered by the same team so the funnel and the creative stay in sync.
+
+Most agencies build a site and walk away. Most ad agencies inherit broken sites and blame the funnel. We do both — so the site and the ads are built for each other.
+
+## FAQ
+
+Q: Why 90 days?
+A: Enough time to test creatives, iterate, and prove ROAS before committing to an ongoing retainer.
+
+Q: What happens after 90 days?
+A: Either roll into a monthly Grow retainer, or we hand over with documentation.
+
+---
+
+# Service: Revamp
+
+URL: https://gloood.in/services/revamp
+Tagline: Keep what works. Fix what doesn't. Data-driven redesign.
+Summary: CRO audit + redesign + rebuild of your existing site, without losing SEO.
+
+## Includes
+- Full analytics + UX audit
+- Redesign based on user data (not opinions)
+- Rebuild on Next.js (or keep current stack if sensible)
+- 301 redirect map to preserve SEO
+- A/B test setup for key pages
+
+## Deliverables
+- Revamped site live
+- Before/after performance report
+- SEO continuity maintained
+
+## Detail
+
+gloood is a website redesign and CRO agency that rebuilds underperforming sites using analytics, heatmaps, and user research — not opinions — while preserving your existing SEO.
+
+Redesigns fail when they're opinion-driven. Ours start with the data: what's converting, what's not, and why. Then we redesign around what the numbers say.
+
+## FAQ
+
+Q: Will our SEO survive the revamp?
+A: Yes — we build a full redirect map before launch and monitor rankings for 30 days after.
+
+Q: Can you work with our existing CMS?
+A: Usually yes. If it's holding you back, we'll tell you.
+
+---
+
+# Case study: iORA Dental
+
+URL: https://gloood.in/work/iora-dental
+Client: iORA Dental (UK)
+Year: 2024
+Tags: web, performance
+
+Excerpt: Rebuilt the site around booking flow; paired with Meta ads that actually filled the calendar.
+
+Metrics:
+- 2.8× Monthly bookings
+- 71% CPA reduction
+- 4.0 Google rating ↑
+
+## The brief
+
+More qualified patient enquiries, not just more traffic.
+
+## What we did
+
+Rebuilt around a simplified booking flow, ran location-targeted Meta ads with review-led creative.
+
+## Results
+
+Booking calendar full within 8 weeks.
+
+---
+
+# Case study: King of Kurry
+
+URL: https://gloood.in/work/king-of-kurry
+Client: King of Kurry
+Year: 2025
+Tags: web, performance
+
+Excerpt: How we rebuilt their site and scaled ads to 4.2× ROAS in 90 days.
+
+Metrics:
+- 4.2× ROAS
+- 62% CPA reduction
+- 3.1× Conversion rate
+
+## The brief
+
+King of Kurry wanted more direct orders and a site that matched the quality of their food.
+
+## What we did
+
+New Next.js site, redesigned menu flow, Meta + Google Ads with creative production in-house.
+
+## Results
+
+Paid media paid for itself by week 3.
+
+---
+
+# Case study: Amazon Prime Video
+
+URL: https://gloood.in/work/prime-video
+Client: Prime Video
+Year: 2024
+Tags: performance
+
+Excerpt: Creative + paid media for a flagship India launch campaign.
+
+Metrics:
+- 18M Impressions
+- 6.4× Engagement lift
+- 42% CPM reduction
+
+## The brief
+
+Launch a tentpole show with measurable reach against a tight launch-week window.
+
+## What we did
+
+Creative production (short-form vertical), Meta + YouTube buying, real-time A/B on hooks.
+
+## Results
+
+Outperformed regional benchmarks on CPM and engagement within 72 hours.
+
+---
+
+# Case study: Skycom
+
+URL: https://gloood.in/work/skycom
+Client: Skycom
+Year: 2024
+Tags: performance
+
+Excerpt: Full-funnel paid media for a B2B telecom player.
+
+Metrics:
+- ₹38 CPL
+- 4.6× SQL conv.
+- 24% Closed-won
+
+## The brief
+
+Generate sales-qualified leads at a CPL the sales team would actually work.
+
+## What we did
+
+Google search + LinkedIn retargeting, landing-page A/B, CRM handshake for scoring.
+
+## Results
+
+CPL dropped by a third, close rate held.
+
+---
+
+# Case study: Trusttec
+
+URL: https://gloood.in/work/trusttec
+Client: Trusttec (Germany)
+Year: 2023
+Tags: web
+
+Excerpt: Positioning overhaul + Next.js rebuild for a European industrial SaaS.
+
+Metrics:
+- 3.4× Qualified demo reqs
+- 58% Bounce rate drop
+- 1.9s LCP
+
+## The brief
+
+A site that spoke to decision-makers, not just engineers.
+
+## What we did
+
+Full rewrite of positioning, Next.js rebuild, clear use-case pages, pricing anchors.
+
+## Results
+
+Demo pipeline doubled in quarter one.
+
+---
+
+# Contact
+
+- Email: hello@gloood.in
+- Web: https://gloood.in/contact
