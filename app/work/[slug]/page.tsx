@@ -1,4 +1,5 @@
 import { MDXRemote } from "next-mdx-remote/rsc";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getCaseStudy, getCaseStudies } from "@/lib/content";
 import { CTASection } from "@/components/site/CTASection";
@@ -51,6 +52,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
     publisher: { "@id": `${SITE_URL}/#organization` },
     datePublished: `${s.year}-01-01`,
     mainEntityOfPage: `${SITE_URL}/work/${s.slug}`,
+    image: `${SITE_URL}${s.hero_image}`,
   };
 
   const breadcrumbSchema = {
@@ -66,7 +68,19 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
   return (
     <>
       <JsonLd data={[articleSchema, breadcrumbSchema]} />
-      <article className="mx-auto max-w-[900px] px-8 py-24">
+      <div className="relative w-full aspect-[21/9] md:aspect-[21/8] overflow-hidden bg-black">
+        <Image
+          src={s.hero_image}
+          alt={`${s.client} — ${s.title}`}
+          fill
+          sizes="100vw"
+          priority
+          className="object-cover opacity-70"
+          unoptimized
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-bg)] via-[var(--color-bg)]/30 to-transparent" />
+      </div>
+      <article className="mx-auto max-w-[900px] px-8 py-24 -mt-32 relative">
         <div className="text-xs uppercase tracking-widest text-[var(--color-muted)] font-display font-medium">{s.client} · {s.year}</div>
         <h1 className="mt-4 text-5xl md:text-7xl">{s.title}</h1>
         <p className="mt-6 text-xl text-[var(--color-muted)]">{s.excerpt}</p>

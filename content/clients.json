@@ -1,8 +1,10 @@
 [
-  { "name": "King of Kurry", "logo": "/logos/kok.svg" },
-  { "name": "Prime Video", "logo": "/logos/prime.svg" },
-  { "name": "FOX", "logo": "/logos/fox.svg" },
-  { "name": "Skycom", "logo": "/logos/skycom.svg" },
-  { "name": "iORA Dental", "logo": "/logos/iora.svg" },
-  { "name": "Trusttec", "logo": "/logos/trusttec.svg" }
+  { "name": "King of Kurry", "logo": "/logos/kok.png" },
+  { "name": "Prime Video", "logo": "/logos/prime.png" },
+  { "name": "FOX", "logo": "/logos/fox.png" },
+  { "name": "Skycom", "logo": "/logos/skycom.png" },
+  { "name": "iORA Dental", "logo": "/logos/iora.png" },
+  { "name": "Trusttec", "logo": "/logos/trusttec.png" },
+  { "name": "Khyber", "logo": "/logos/khyber.png" },
+  { "name": "Creative Co", "logo": "/logos/creativeco.png" }
 ]
