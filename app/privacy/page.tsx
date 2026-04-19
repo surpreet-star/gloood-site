@@ -34,12 +34,12 @@ export default function PrivacyPage() {
       <h2>Your choices</h2>
       <p>
         You can decline analytics cookies via the consent banner. You can request deletion of any personal data
-        you've shared by emailing us at <a href="mailto:hello@gloood.in">hello@gloood.in</a>.
+        you've shared by emailing us at <a href="mailto:surpreet@gloood.in">surpreet@gloood.in</a>.
       </p>
 
       <h2>Contact</h2>
       <p>
-        Questions about this policy? Email <a href="mailto:hello@gloood.in">hello@gloood.in</a>.
+        Questions about this policy? Email <a href="mailto:surpreet@gloood.in">surpreet@gloood.in</a>.
       </p>
     </div>
   );

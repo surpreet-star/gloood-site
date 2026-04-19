@@ -37,7 +37,7 @@ export default function TermsPage() {
 
       <h2>Contact</h2>
       <p>
-        Questions about these terms? Email <a href="mailto:hello@gloood.in">hello@gloood.in</a>.
+        Questions about these terms? Email <a href="mailto:surpreet@gloood.in">surpreet@gloood.in</a>.
       </p>
     </div>
   );

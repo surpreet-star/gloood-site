@@ -41,7 +41,7 @@ const organizationSchema = {
   name: "gloood",
   url: SITE_URL,
   logo: `${SITE_URL}/logo.png`,
-  email: "hello@gloood.in",
+  email: "surpreet@gloood.in",
   description: DEFAULT_DESCRIPTION,
 };
 

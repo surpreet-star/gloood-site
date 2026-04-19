@@ -3,7 +3,7 @@
 Website design and performance marketing for ambitious SMBs. One small senior team. We build websites that convert, and run the paid media to fill them.
 
 Site: https://gloood.in
-Contact: hello@gloood.in
+Contact: surpreet@gloood.in
 
 ---
 
@@ -310,5 +310,5 @@ Demo pipeline doubled in quarter one.
 
 # Contact
 
-- Email: hello@gloood.in
+- Email: surpreet@gloood.in
 - Web: https://gloood.in/contact
