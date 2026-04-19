@@ -31,7 +31,11 @@ export function QuoteForm({ defaultBundle = "launch", sourcePage }: { defaultBun
   const onSubmit = async (data: QuoteFormInput) => {
     setState({ status: "sending" });
     const r = await submitQuote(data, sourcePage);
-    if (r.ok) setState({ status: "ok" });
+    if (r.ok) {
+      const { track } = await import("@/lib/gtm");
+      track("quote_form_submit", { bundle: data.bundle, budget: data.budget, source: sourcePage });
+      setState({ status: "ok" });
+    }
     else setState({ status: "err", msg: r.error });
   };
 
