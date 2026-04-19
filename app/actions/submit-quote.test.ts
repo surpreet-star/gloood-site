@@ -1,6 +1,6 @@
 // gloood-site/app/actions/submit-quote.test.ts
 import { describe, it, expect, vi, beforeEach } from "vitest";
-import { submitQuote } from "./submit-quote";
+import { submitQuoteImpl as submitQuote } from "./submit-quote";
 import * as resend from "@/lib/resend";
 import * as rl from "@/lib/rate-limit";
 

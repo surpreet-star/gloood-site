@@ -1,5 +1,6 @@
 // gloood-site/app/actions/submit-quote.ts
 "use server";
+import { headers } from "next/headers";
 import { QuoteFormSchema, type QuoteFormInput } from "@/lib/schema";
 import { checkRateLimit } from "@/lib/rate-limit";
 import { sendQuoteEmail } from "@/lib/resend";
@@ -19,6 +20,15 @@ async function verifyTurnstile(token: string): Promise<boolean> {
 }
 
 export async function submitQuote(
+  input: QuoteFormInput,
+  sourcePage: string
+): Promise<{ ok: boolean; error?: string }> {
+  const h = await headers();
+  const ip = h.get("x-forwarded-for")?.split(",")[0]?.trim() ?? "0.0.0.0";
+  return submitQuoteImpl(input, ip, sourcePage);
+}
+
+export async function submitQuoteImpl(
   input: QuoteFormInput,
   ip: string,
   sourcePage: string
