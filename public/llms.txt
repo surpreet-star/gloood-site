@@ -7,6 +7,7 @@
 - [Home](https://gloood.in/): overview of gloood, services, featured work
 - [About](https://gloood.in/about): how we think, our approach to outcomes over outputs
 - [Work](https://gloood.in/work): full list of case studies
+- [Insights](https://gloood.in/insights): practical guides on websites, performance marketing, and growth for Indian SMBs
 - [Contact](https://gloood.in/contact): get in touch to discuss a project
 
 ## Services
@@ -15,6 +16,23 @@
 - [Grow — Performance Ads](https://gloood.in/services/performance-ads): Meta and Google Ads management for Indian SMBs, creative + targeting + tracking
 - [Launch + Grow (Bundle)](https://gloood.in/services/launch-grow): website plus 90 days of paid ads, delivered as one engagement
 - [Revamp](https://gloood.in/services/revamp): redesign and CRO for underperforming sites, keeps SEO intact
+
+## Industries
+
+- [Restaurants](https://gloood.in/industries/restaurants): restaurant websites and Swiggy/Zomato-aware performance ads
+- [B2B & Industrial](https://gloood.in/industries/b2b-industrial): use-case-led B2B sites with spec sheets, RFQ flows, and Google Search campaigns
+- [Healthcare](https://gloood.in/industries/healthcare): booking-first clinic sites with compliant review-led creative
+
+## Locations
+
+- [Mumbai](https://gloood.in/locations/mumbai): Mumbai-based agency serving Mumbai, Navi Mumbai, Thane
+- [India](https://gloood.in/locations/india): pan-India performance marketing and website delivery
+
+## Insights
+
+- [How much does a website cost in India in 2026?](https://gloood.in/insights/cost-of-website-design-india-2026): real price ranges for SMB website design — freelancers, DIY, agencies, enterprise
+- [Meta Ads vs Google Ads for Indian SMBs](https://gloood.in/insights/sme-guide-meta-vs-google-ads-india): when each channel wins, India-2026 CPC/CPL benchmarks, how to split budget
+- [The website redesign checklist that actually lifts conversions](https://gloood.in/insights/website-redesign-checklist-that-converts): 14-point redesign checklist covering audit, SEO preservation, CRO, and launch QA
 
 ## Case studies
 

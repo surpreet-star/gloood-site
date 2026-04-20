@@ -308,6 +308,135 @@ Demo pipeline doubled in quarter one.
 
 ---
 
+# Industry: Restaurants
+
+URL: https://gloood.in/industries/restaurants
+Tagline: Websites and ads that fill tables, not just feeds.
+Keyword: restaurant website design india
+
+We build menu-first, fast-loading Next.js restaurant sites with direct ordering flows that save the 20–30% Swiggy/Zomato commission. We run Meta ads with food-photography-led creatives geo-targeted to a 3–5km catchment, plus Google Business Profile optimisation and `Restaurant` / `Menu` / `LocalBusiness` schema.
+
+Typical client: Indian restaurants, cafés, and small chains shifting share from aggregators to direct.
+Minimum recommended ad budget: ₹25,000–₹40,000/month for a single-outlet brand.
+Related case study: King of Kurry — ~18% of monthly orders shifted from aggregators to direct in 90 days.
+
+---
+
+# Industry: B2B & Industrial
+
+URL: https://gloood.in/industries/b2b-industrial
+Tagline: B2B sites that speak to procurement, not consumers.
+Keyword: b2b industrial website india
+
+B2B-specific website and paid media: use-case pages per vertical (automotive, pharma, FMCG, EPC), downloadable spec sheets / datasheets behind lean forms, certification and trust-signal pages, quote-request flows with qualification fields, Google Search campaigns on product/application keywords, and LinkedIn Ads for ABM at senior procurement/ops/engineering titles. CRM integration to HubSpot / Zoho / Salesforce so attribution tracks through to deal stage.
+
+Typical client: Indian manufacturers, distributors, industrial services, technical SaaS.
+Recommended ad spend: ₹60,000–₹1,50,000/month Google Search + optional LinkedIn for ACV ₹5L+.
+Related case study: TrustTec — inbound qualified RFQs grew from 1–2/month to 8–12/month at ~₹780 blended CPL.
+
+---
+
+# Industry: Healthcare
+
+URL: https://gloood.in/industries/healthcare
+Tagline: Clinic & healthcare sites that fill appointments.
+Keyword: healthcare website design india
+
+Booking-first sites for dental, aesthetic, diagnostic, and multi-speciality clinics. Appointment CTA in every hero and end-of-scroll, native Google-reviews social proof, service-specific landing pages for long-tail local keywords (e.g. "root canal Andheri," "Invisalign Powai"), `MedicalBusiness` / `Physician` schema. Ads are geo-targeted to 3–8km catchments with compliance-reviewed creative — we have not had a permanent ad-account ban on a healthcare client.
+
+Typical CPL benchmarks (India 2026): dental ₹250–₹700, aesthetic ₹500–₹1,500, diagnostic ₹150–₹500.
+Related case study: iORA Dental — 2.8× monthly bookings, 71% CPA reduction in 90 days.
+
+---
+
+# Location: Mumbai
+
+URL: https://gloood.in/locations/mumbai
+Title: Website Design Agency in Mumbai
+H1: A website design and marketing agency, from Mumbai.
+Keyword: website design agency mumbai
+
+Mumbai-headquartered. Service areas: South Mumbai, Bandra, Andheri, Powai, Vikhroli, Goregaon, Borivali, plus Navi Mumbai and Thane. In-person meetings reserved for discovery kickoff, mid-project design reviews, and launch day when useful. INR invoicing with GST. Same time zone. Known local clients: King of Kurry (MMR restaurant group), clinics and D2C brands in Bandra/Andheri/Thane, B2B industrial clients in the Thane–Bhiwandi belt.
+
+---
+
+# Location: India (pan-India)
+
+URL: https://gloood.in/locations/india
+Title: Performance Marketing Agency in India
+H1: Performance marketing and websites, for Indian SMBs.
+Keyword: performance marketing agency india
+
+Fully remote pan-India delivery. Active client base across the last 24 months spans Mumbai, Delhi NCR, Gurgaon, Bangalore, Pune, Chennai, Hyderabad, and Tier-2 cities. INR invoicing with 18% GST (SAC 998314 / 998361). Payment terms: 40/40/20 on projects, monthly-in-advance on retainers. Clients retain direct ownership of all accounts — Figma, GA4, Search Console, Meta Ads Manager, Google Ads, GTM.
+
+---
+
+# Insight: How much does a website cost in India in 2026?
+
+URL: https://gloood.in/insights/cost-of-website-design-india-2026
+Publish date: 2026-04-15
+Reading time: 11 minutes
+Tags: pricing, website-design
+
+Real price bands for SMB website design in India 2026:
+
+- Freelancer: ₹15,000–₹50,000. Template-based WordPress/Elementor, 4–8 pages, copy usually not included, no meaningful analytics/SEO/performance work.
+- DIY platforms (Wix/Squarespace/Shopify/Framer/Webflow): ₹3,000–₹15,000/year in platform fees plus significant time cost and lock-in.
+- Junior agency: ₹50,000–₹1,50,000. 6–12 pages, basic copy and SEO. Visually adequate, commercially flat.
+- Senior agency (gloood's tier): ₹1,50,000–₹5,00,000. Strategy, custom design, Next.js build, real copy, CRO, full SEO/schema, analytics wired at launch, 30–60 days post-launch support.
+- Enterprise: ₹5,00,000+. Headless, multi-language, custom integrations, PIM.
+
+Hidden costs: domain ₹800–₹2,000/yr, hosting ₹0–₹8,000/month, Workspace ₹150/user/month, copywriting ₹15,000–₹60,000, photography ₹20,000–₹80,000, maintenance ₹5,000–₹25,000/month. Red flags: "₹10,000 for a full website," "unlimited revisions," 100% upfront payment, no access to analytics post-launch.
+
+---
+
+# Insight: Meta Ads vs Google Ads for Indian SMBs: the honest guide
+
+URL: https://gloood.in/insights/sme-guide-meta-vs-google-ads-india
+Publish date: 2026-03-28
+Reading time: 13 minutes
+Tags: performance-marketing, meta-ads, google-ads
+
+Decision rule: if the thing you sell has search volume on Google in India, start with Google. If it doesn't, start with Meta.
+
+Meta (India 2026 benchmarks):
+- CPM ₹90–₹350; CTR 0.8–2.2% static, 1.5–3.5% video; CPC ₹4–₹22; CPL ₹80–₹600; D2C ROAS 2×–6×.
+- Categories that work: FMCG, D2C, restaurants, hospitality, wellness, events, impulse-buy under ₹3,000.
+- Creative is 80% of the outcome in 2026. Targeting is largely solved.
+
+Google (India 2026 benchmarks):
+- CPC consumer local ₹10–₹80; B2B industrial ₹35–₹250; legal/financial ₹80–₹500.
+- CTR on branded search 18–40%; non-brand commercial 3–10%.
+- B2B services CPL ₹400–₹3,000. PMax e-comm ROAS 3×–7× after 6-week learning.
+- Categories that work: B2B, local services with urgent intent, healthcare, considered purchases.
+
+Budget minimums: ₹30,000–₹50,000/month per channel to learn; ₹1,00,000+/month to scale. Below ₹30,000/month, algorithms don't get enough conversion volume to optimise.
+
+Attribution pitfalls: Meta and Google both claim the same conversion — always look at blended CAC across all channels. View-through conversions in 2026 are partly modelled; treat with scepticism. Branded search is over-credited.
+
+---
+
+# Insight: The website redesign checklist that actually lifts conversions
+
+URL: https://gloood.in/insights/website-redesign-checklist-that-converts
+Publish date: 2026-02-14
+Reading time: 10 minutes
+Tags: website-redesign, cro, checklist
+
+14-point redesign checklist for SMBs:
+
+Phase 1 Audit — (1) GA4 12-month data, (2) Search Console baseline, (3) Hotjar/Clarity recordings, (4) customer interviews.
+Phase 2 Keep/Kill/Fix — categorise every page. Typical mix: 40% keep, 30% kill, 30% fix.
+Phase 3 SEO preservation — (5) 301 redirect map built before sign-off, (6) preserve H1/title on top-traffic pages, (7) keep canonicals, (8) preserve internal link structure, (9) submit new XML sitemap day one.
+Phase 4 Design — (10) answer "what/who/proof/next step" in first scroll, (11) one primary CTA per page, (12) mobile-first.
+Phase 5 Build — (13) LCP <2.5s, CLS <0.1, INP <200ms; structured data; compressed images.
+Phase 6 Launch — (14) runbook: staging QA, 301 tests, form end-to-end, tracking fires, `noindex` removed from staging, analytics annotation.
+Phase 7 Monitor — 30/60/90-day checks against pre-launch baseline.
+
+Eight mistakes: changing URLs without redirects; no CWV testing; removing "unsexy" pages that secretly rank; hiding prices; auto-slider heroes; generic stock photography; no launch-day tracking QA; declaring victory at launch.
+
+---
+
 # Contact
 
 - Email: surpreet@gloood.in
