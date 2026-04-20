@@ -55,9 +55,14 @@ export default function BrandPage() {
               <div className="flex min-h-[160px] items-center justify-center">
                 <img src="/brand/logo-wordmark-dark.svg" alt="gloood wordmark on dark" width={360} height={100} />
               </div>
-              <div className="mt-6 flex items-center justify-between border-t border-[var(--color-border-subtle)] pt-4 text-sm">
-                <span className="text-[var(--color-muted)]">Primary — on dark</span>
-                <a href="/brand/logo-wordmark-dark.svg" download className="text-[var(--color-accent-1,#7C5CFF)] underline">Download SVG</a>
+              <div className="mt-6 border-t border-[var(--color-border-subtle)] pt-4">
+                <div className="text-xs uppercase tracking-widest text-[var(--color-muted)] font-display font-medium">Primary — on dark</div>
+                <div className="mt-3 flex flex-wrap gap-3 text-sm">
+                  <a href="/brand/logo-wordmark-dark.svg" download className="rounded-lg border border-[var(--color-border-subtle)] px-3 py-1.5 hover:border-[var(--color-accent)] transition-colors">SVG</a>
+                  <a href="/brand/logo-wordmark-dark-256.png" download className="rounded-lg border border-[var(--color-border-subtle)] px-3 py-1.5 hover:border-[var(--color-accent)] transition-colors">PNG 256</a>
+                  <a href="/brand/logo-wordmark-dark-512.png" download className="rounded-lg border border-[var(--color-border-subtle)] px-3 py-1.5 hover:border-[var(--color-accent)] transition-colors">PNG 512</a>
+                  <a href="/brand/logo-wordmark-dark-1024.png" download className="rounded-lg border border-[var(--color-border-subtle)] px-3 py-1.5 hover:border-[var(--color-accent)] transition-colors">PNG 1024</a>
+                </div>
               </div>
             </div>
 
@@ -65,10 +70,24 @@ export default function BrandPage() {
               <div className="flex min-h-[160px] items-center justify-center">
                 <img src="/brand/logo-wordmark-light.svg" alt="gloood wordmark on light" width={360} height={100} />
               </div>
-              <div className="mt-6 flex items-center justify-between border-t border-black/10 pt-4 text-sm text-[#0A0B10]">
-                <span className="opacity-70">Inverse — on light</span>
-                <a href="/brand/logo-wordmark-light.svg" download className="underline">Download SVG</a>
+              <div className="mt-6 border-t border-black/10 pt-4 text-[#0A0B10]">
+                <div className="text-xs uppercase tracking-widest opacity-60 font-display font-medium">Inverse — on light</div>
+                <div className="mt-3 flex flex-wrap gap-3 text-sm">
+                  <a href="/brand/logo-wordmark-light.svg" download className="rounded-lg border border-black/15 px-3 py-1.5 hover:border-[#7C5CFF] transition-colors">SVG</a>
+                  <a href="/brand/logo-wordmark-light-256.png" download className="rounded-lg border border-black/15 px-3 py-1.5 hover:border-[#7C5CFF] transition-colors">PNG 256</a>
+                  <a href="/brand/logo-wordmark-light-512.png" download className="rounded-lg border border-black/15 px-3 py-1.5 hover:border-[#7C5CFF] transition-colors">PNG 512</a>
+                  <a href="/brand/logo-wordmark-light-1024.png" download className="rounded-lg border border-black/15 px-3 py-1.5 hover:border-[#7C5CFF] transition-colors">PNG 1024</a>
+                </div>
               </div>
+            </div>
+          </div>
+
+          <div className="mt-6 rounded-2xl border border-[var(--color-border-subtle)] bg-[var(--color-bg-elev,#14161F)] p-6">
+            <div className="text-xs uppercase tracking-widest text-[var(--color-muted)] font-display font-medium">Also available — Ink background PNG (solid, for Slack / Twitter / OG)</div>
+            <div className="mt-3 flex flex-wrap gap-3 text-sm">
+              <a href="/brand/logo-wordmark-dark-ink-256.png" download className="rounded-lg border border-[var(--color-border-subtle)] px-3 py-1.5 hover:border-[var(--color-accent)] transition-colors">PNG 256</a>
+              <a href="/brand/logo-wordmark-dark-ink-512.png" download className="rounded-lg border border-[var(--color-border-subtle)] px-3 py-1.5 hover:border-[var(--color-accent)] transition-colors">PNG 512</a>
+              <a href="/brand/logo-wordmark-dark-ink-1024.png" download className="rounded-lg border border-[var(--color-border-subtle)] px-3 py-1.5 hover:border-[var(--color-accent)] transition-colors">PNG 1024</a>
             </div>
           </div>
 
