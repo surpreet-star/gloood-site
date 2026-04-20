@@ -8,7 +8,7 @@ export function CaseStudyCard({ study, size = "sm" }: { study: CaseStudy; size?:
       <div className={`relative w-full overflow-hidden bg-black ${size === "lg" ? "aspect-[16/10]" : "aspect-[16/9]"}`}>
         <Image
           src={study.hero_image}
-          alt={`${study.client} — ${study.title}`}
+          alt={`${study.client} case study — ${study.title}`}
           fill
           sizes="(max-width: 768px) 100vw, 33vw"
           className="object-cover opacity-80 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500"

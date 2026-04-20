@@ -81,7 +81,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
       <div className="relative w-full aspect-[21/9] md:aspect-[21/8] overflow-hidden bg-black">
         <Image
           src={s.hero_image}
-          alt={`${s.client} — ${s.title}`}
+          alt={`${s.client} ${s.title} — gloood case study`}
           fill
           sizes="100vw"
           priority

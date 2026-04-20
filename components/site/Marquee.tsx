@@ -10,7 +10,7 @@ export function Marquee() {
           <div key={i} className="shrink-0 h-10 w-32 relative opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0">
             <Image
               src={c.logo}
-              alt={c.name}
+              alt={`${c.name} logo`}
               fill
               sizes="128px"
               className="object-contain brightness-0 invert"
