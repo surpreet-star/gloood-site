@@ -22,21 +22,37 @@ const BUDGET_LABELS: Record<(typeof BUDGETS)[number], string> = {
 
 export function QuoteForm({ defaultBundle = "launch", sourcePage }: { defaultBundle?: (typeof BUNDLES)[number]; sourcePage: string }) {
   const [state, setState] = useState<{ status: "idle" | "sending" | "ok" | "err"; msg?: string }>({ status: "idle" });
+  const siteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
   const { register, handleSubmit, setValue, watch, formState: { errors } } = useForm<QuoteFormInput>({
     resolver: zodResolver(QuoteFormSchema),
-    defaultValues: { bundle: defaultBundle, budget: "not-sure", turnstileToken: "", website: "" },
+    defaultValues: {
+      bundle: defaultBundle,
+      budget: "not-sure",
+      turnstileToken: siteKey ? "" : "dev",
+      website: "",
+    },
   });
-  const siteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
+  const turnstileToken = watch("turnstileToken");
+  const turnstileReady = !siteKey || Boolean(turnstileToken);
 
   const onSubmit = async (data: QuoteFormInput) => {
     setState({ status: "sending" });
-    const r = await submitQuote(data, sourcePage);
-    if (r.ok) {
-      const { track } = await import("@/lib/gtm");
-      track("quote_form_submit", { bundle: data.bundle, budget: data.budget, source: sourcePage });
-      setState({ status: "ok" });
+    try {
+      const r = await submitQuote(data, sourcePage);
+      if (r.ok) {
+        const { track } = await import("@/lib/gtm");
+        track("quote_form_submit", { bundle: data.bundle, budget: data.budget, source: sourcePage });
+        setState({ status: "ok" });
+      } else {
+        setState({ status: "err", msg: r.error ?? "Something went wrong. Please try again." });
+      }
+    } catch (e) {
+      setState({ status: "err", msg: (e as Error).message ?? "Network error. Please try again." });
     }
-    else setState({ status: "err", msg: r.error });
+  };
+
+  const onInvalid = () => {
+    setState({ status: "err", msg: "Please fix the highlighted fields and try again." });
   };
 
   if (state.status === "ok") {
@@ -46,7 +62,7 @@ export function QuoteForm({ defaultBundle = "launch", sourcePage }: { defaultBun
   const inputCls = "w-full rounded-xl border border-[var(--color-border-subtle)] bg-[var(--color-bg-elev)] px-4 py-3 text-[var(--color-text)] focus:border-[var(--color-accent)] outline-none";
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="grid gap-4">
+    <form onSubmit={handleSubmit(onSubmit, onInvalid)} className="grid gap-4">
       <input type="text" {...register("website")} className="sr-only" tabIndex={-1} autoComplete="off" aria-hidden />
       <div className="grid md:grid-cols-2 gap-4">
         <div>
@@ -82,19 +98,23 @@ export function QuoteForm({ defaultBundle = "launch", sourcePage }: { defaultBun
         {errors.message && <p className="text-red-400 text-sm mt-1">{errors.message.message}</p>}
       </div>
       {siteKey && (
-        <Turnstile
-          siteKey={siteKey}
-          onSuccess={token => setValue("turnstileToken", token)}
-          options={{ theme: "dark" }}
-        />
+        <div>
+          <Turnstile
+            siteKey={siteKey}
+            onSuccess={token => setValue("turnstileToken", token, { shouldValidate: true })}
+            onError={() => setValue("turnstileToken", "", { shouldValidate: true })}
+            onExpire={() => setValue("turnstileToken", "", { shouldValidate: true })}
+            options={{ theme: "dark" }}
+          />
+          {errors.turnstileToken && <p className="text-red-400 text-sm mt-2">Please complete the verification above.</p>}
+        </div>
       )}
-      {!siteKey && <input type="hidden" {...register("turnstileToken")} value="dev" />}
       <button
         type="submit"
-        disabled={state.status === "sending"}
-        className="mt-2 rounded-xl bg-[var(--color-accent)] px-7 py-4 text-sm font-bold font-display text-white hover:bg-[var(--color-accent-2)] hover:text-black transition-colors disabled:opacity-50"
+        disabled={state.status === "sending" || !turnstileReady}
+        className="mt-2 rounded-xl bg-[var(--color-accent)] px-7 py-4 text-sm font-bold font-display text-white hover:bg-[var(--color-accent-2)] hover:text-black transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
       >
-        {state.status === "sending" ? "Sending…" : "Send quote request →"}
+        {state.status === "sending" ? "Sending…" : !turnstileReady ? "Verify to submit" : "Send quote request →"}
       </button>
       {state.status === "err" && <p className="text-red-400 text-sm">{state.msg}</p>}
     </form>
