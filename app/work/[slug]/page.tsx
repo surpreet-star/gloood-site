@@ -54,7 +54,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
 
   const mentions = [
     ...(s.meta?.services ?? []).map(name => ({ "@type": "Service", name })),
-    ...(s.meta?.tech_stack ?? []).map(name => ({ "@type": "SoftwareApplication", name })),
+    ...(s.meta?.tech_stack ?? []).map(name => ({ "@type": "Thing", name })),
   ];
   const articleSchema = {
     "@context": "https://schema.org",
