@@ -48,7 +48,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
     "@type": "Article",
     headline: s.title,
     description: s.excerpt,
-    author: { "@type": "Organization", name: "gloood", url: SITE_URL },
+    author: { "@type": "Person", name: "Surpreet Mahal", url: SITE_URL },
     publisher: { "@id": `${SITE_URL}/#organization` },
     datePublished: s.publish_date ?? `${s.year}-01-01`,
     dateModified: s.publish_date ?? `${s.year}-01-01`,
@@ -85,6 +85,13 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
         <div className="text-xs uppercase tracking-widest text-[var(--color-muted)] font-display font-medium">{s.client} · {s.year}</div>
         <h1 className="mt-4 text-5xl md:text-7xl">{s.title}</h1>
         <p className="mt-6 text-xl text-[var(--color-muted)]">{s.excerpt}</p>
+        <div className="mt-6 flex items-center gap-3 text-sm text-[var(--color-muted)]">
+          <span className="font-display font-medium">By Surpreet Mahal</span>
+          <span>·</span>
+          <time dateTime={s.publish_date ?? `${s.year}-01-01`}>
+            {new Date(s.publish_date ?? `${s.year}-01-01`).toLocaleDateString("en-IN", { year: "numeric", month: "long", day: "numeric" })}
+          </time>
+        </div>
         <div className="mt-12 grid grid-cols-3 gap-8 py-10 border-y border-[var(--color-border-subtle)]">
           {s.metrics.map(m => (
             <div key={m.label}>
