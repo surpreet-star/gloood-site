@@ -1,0 +1,196 @@
+---
+slug: "website-redesign-checklist-that-converts"
+title: "The website redesign checklist that actually lifts conversions"
+description: "A 14-point redesign checklist for SMBs: data audit, SEO preservation, CRO priorities, and the common mistakes we see agencies make."
+publish_date: "2026-02-14"
+author: "Surpreet Mahal"
+tags: ["website-redesign", "cro", "checklist"]
+reading_time: 10
+---
+
+Most website redesigns lose money. That isn't cynicism — it's what the data says.
+
+Studies from Google, HubSpot, and our own client audits consistently show that around 60% of redesigns result in flat or *lower* traffic and conversions in the first 90 days. A surprisingly large share never recover.
+
+The sad part is that this is mostly avoidable. Redesigns fail in predictable ways. After rebuilding 30-odd SMB sites across India, we've distilled the playbook into a 14-point checklist. If you do nothing else, do these in order.
+
+## Why most redesigns lose traffic
+
+The three recurring culprits are:
+
+- **SEO gets broken on launch** — 301 redirects are missing, titles change, URLs change, Core Web Vitals drop.
+- **Redesign is opinion-led, not data-led** — someone's boss didn't like the old homepage, so it was thrown out. Nobody checked what was converting.
+- **Launch is treated as "done"** — no monitoring, no fixes, no iteration. The site's best month is week one; it's been dying quietly since.
+
+The checklist below prevents each of these.
+
+## Phase 1 — Audit
+
+You cannot improve what you haven't measured. Before any design work happens, collect:
+
+### 1. Current GA4 data (12 months minimum)
+
+- Top 25 landing pages by organic traffic
+- Top 10 pages by conversions
+- Bounce rate and time on page for each
+- Mobile vs desktop split
+- Conversion rate by device and by page
+
+### 2. Search Console baseline
+
+- Top 50 ranking keywords
+- Top 50 URLs by impressions
+- Click-through rate by query
+
+### 3. Heatmap / session recording snapshot
+
+Install Hotjar or Microsoft Clarity (free) two weeks before you start. Watch 20 real sessions. You will learn more than any competitor audit will tell you.
+
+### 4. The "why do they leave?" interview
+
+Call three customers who chose you, and if possible two who didn't. Five 15-minute calls will beat any analytics dashboard.
+
+> If you haven't done an audit, you're not redesigning. You're redecorating with your eyes closed.
+
+## Phase 2 — Keep / Kill / Fix decision matrix
+
+Every page on the old site goes into one of three buckets.
+
+**Keep**
+- High-traffic, high-converting pages — leave the URL, meta, and H1 alone. Improve only layout and speed.
+
+**Kill**
+- Pages with no traffic, no links, and no commercial value. Delete them. Set up 301s to the nearest relevant page.
+
+**Fix**
+- Medium-traffic pages that don't convert. These are the lift opportunity — rewrite copy, simplify the CTA, restructure the layout.
+
+Most SMB sites have about 40% keep, 30% kill, 30% fix. The exact mix varies but the discipline of putting *every page* in a bucket is what prevents the "oh we forgot the pricing page" launch-day panic.
+
+## Phase 3 — SEO preservation
+
+This is the single biggest source of post-redesign traffic loss. Treat it as engineering, not marketing.
+
+### 5. Build the 301 map before the design is signed off
+
+A spreadsheet: old URL, new URL, status code. Every old URL that exists today must be accounted for. Orphans die.
+
+### 6. Preserve H1s and title tags on top-traffic pages
+
+If a page ranks #3 for "B2B industrial fasteners Pune," do not change its H1 on launch day. Improve the layout around it, not the signal Google has been reading for three years.
+
+### 7. Match canonical tags and meta descriptions
+
+Keep canonical structure identical where the URL stays the same. Update meta descriptions only where you're confident the new one will lift CTR.
+
+### 8. Preserve internal link structure
+
+Footer links, main nav, in-body links — if `/about` linked to `/services/cro` from every page, keep that link. Internal links are SEO currency that's easy to spend accidentally.
+
+### 9. Submit a new XML sitemap day one
+
+And watch Search Console's "coverage" report daily for the first two weeks. Any "discovered but not indexed" URL is a signal to investigate.
+
+## Phase 4 — Design
+
+This is where most redesigns go wrong, because clients have strong opinions and teams default to pleasing them.
+
+### 10. Design for the user, not the boardroom
+
+The user wants to know, in this order:
+
+1. What do you do?
+2. Who is this for?
+3. Is it any good? (social proof)
+4. What does it cost / how do I start?
+
+Every page should answer those four in the first scroll. If your new homepage needs three scrolls to tell a user what you sell, you have designed for yourself, not them.
+
+### 11. One primary CTA per page, always visible
+
+"Talk to us," "Get a quote," "Book a call" — pick one. Put it in the nav, above the fold, and at the end of every section. The "call now + WhatsApp + enquiry form + chatbot + downloadable PDF" approach spreads conversion too thin.
+
+### 12. Design for mobile first, desktop second
+
+70%+ of Indian SMB site traffic is mobile. Design the mobile layout first and up-spec from there. Reverse order is how you end up with homepages that look great on a 27" monitor and cramped on a phone.
+
+## Phase 5 — Build
+
+### 13. Build fast and build clean
+
+In 2026, that means:
+
+- **Core Web Vitals in green** on launch day: LCP < 2.5s, CLS < 0.1, INP < 200ms
+- **Images compressed** and served in next-gen formats (AVIF / WebP)
+- **Fonts preloaded** and subset
+- **No render-blocking scripts** above the fold
+- **Structured data** (Organization, LocalBusiness, FAQ, Service, Article) where appropriate
+
+We build on Next.js because it makes the above mostly free. But the stack isn't the point — the performance target is.
+
+## Phase 6 — Launch
+
+The night before launch is where the wheels fall off. Work the list.
+
+### 14. The launch-day runbook
+
+The checklist we run, every time:
+
+- Staging QA complete on mobile, tablet, desktop, across Chrome, Safari, Edge
+- 301 redirects tested from a sample of 20 old URLs
+- Forms tested end-to-end (including the email/CRM destination)
+- Tracking tested: GA4, Meta Pixel, Google Ads, GTM events all firing
+- SSL certificate valid on all subdomains
+- DNS TTL lowered 48 hours before cutover
+- Robots.txt and XML sitemap reviewed
+- `noindex` tags from staging removed — seriously, check this
+- Search Console and Bing Webmaster Tools re-verified
+- Analytics annotation added on launch day so the data spike (or dip) is labelled
+
+> The single most common post-launch bug we find on sites we take over? A stray `noindex` from staging that was never removed. It kills organic traffic overnight.
+
+## Phase 7 — Monitor
+
+Launch isn't done. It's the start of the real work.
+
+### 30-day check
+
+- Compare GA4 traffic to the 30-day pre-launch baseline
+- Fix any URLs showing high bounce and low time-on-page
+- Review Search Console "coverage" for indexing errors
+
+### 60-day check
+
+- Compare keyword rankings to pre-launch
+- Identify any pages that lost top-10 positions and investigate
+- Review session recordings on the new top-converting pages
+- A/B test one hero headline if you have traffic volume (>10,000 sessions/month)
+
+### 90-day check
+
+- Compare CPL / conversion rate to baseline
+- Identify two pages to iterate further
+- Lock in new title tags and meta descriptions based on what Search Console is telling you
+
+## Eight mistakes we see agencies make
+
+Even experienced teams fall into these.
+
+1. **Changing URLs "because they're cleaner now"** — with no redirect map. Bye-bye rankings.
+2. **Shipping without Core Web Vitals testing.** Elementor/WordPress redesigns routinely launch with an LCP above 5s.
+3. **Removing "unsexy" pages** that were quietly ranking for long-tail keywords.
+4. **Hiding the price page** because someone higher up "wants leads to talk to us first." Your bounce rate will double.
+5. **Auto-sliders in the hero.** They tank conversion. Every heatmap we've run for the last six years shows users barely interact with slide 2 or 3.
+6. **Generic stock photography** on a local Indian business. It signals "not real."
+7. **No launch-day tracking QA.** Silent tracking failures are worse than broken tracking — you don't know you can't trust your data.
+8. **Declaring victory at launch.** The site is a hypothesis. The next 90 days prove it or disprove it.
+
+## When you need help
+
+If your current site has 6+ months of traffic and isn't converting, a redesign framed as "CRO + SEO continuity" will almost always outperform a scratch rebuild. That's precisely what [our Revamp service](/services/revamp) is built for — preserving the signal your old site has earned while fixing the layout, speed, and conversion paths that are losing you money.
+
+See our [TrustTec case study](/work/trusttec) for a before-and-after example — same domain, same products, completely rebuilt presentation, and a 7× lift in monthly B2B enquiries within 90 days of launch.
+
+---
+
+If you're planning a redesign and want a second pair of eyes on the plan before you sign with anyone, [get in touch](/contact). We're happy to tell you whether your brief is sound or whether it has the usual holes.

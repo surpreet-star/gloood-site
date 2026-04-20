@@ -73,3 +73,95 @@ export async function getAllServices(): Promise<Service[]> {
       .map(async f => (await getService(f.replace(/\.mdx$/, "")))!)
   );
 }
+
+const INSIGHTS_DIR = path.join(process.cwd(), "content/insights");
+
+export type Insight = {
+  slug: string;
+  title: string;
+  description: string;
+  publish_date: string;
+  author: string;
+  tags: string[];
+  reading_time: number;
+  content: string;
+};
+
+export async function getInsights(): Promise<Insight[]> {
+  const files = await fs.readdir(INSIGHTS_DIR);
+  const out = await Promise.all(
+    files.filter(f => f.endsWith(".mdx")).map(async file => {
+      const raw = await fs.readFile(path.join(INSIGHTS_DIR, file), "utf8");
+      const { data, content } = matter(raw);
+      return { ...data, content } as Insight;
+    })
+  );
+  return out.sort((a, b) => b.publish_date.localeCompare(a.publish_date));
+}
+
+export async function getInsight(slug: string): Promise<Insight | null> {
+  const all = await getInsights();
+  return all.find(i => i.slug === slug) ?? null;
+}
+
+const INDUSTRIES_DIR = path.join(process.cwd(), "content/industries");
+
+export type Industry = {
+  slug: string;
+  title: string;
+  h1: string;
+  description: string;
+  keyword: string;
+  case_study_slugs: string[];
+  content: string;
+};
+
+export async function getIndustry(slug: string): Promise<Industry | null> {
+  try {
+    const raw = await fs.readFile(path.join(INDUSTRIES_DIR, `${slug}.mdx`), "utf8");
+    const { data, content } = matter(raw);
+    return { ...data, content } as Industry;
+  } catch {
+    return null;
+  }
+}
+
+export async function getAllIndustries(): Promise<Industry[]> {
+  const files = await fs.readdir(INDUSTRIES_DIR);
+  return Promise.all(
+    files
+      .filter(f => f.endsWith(".mdx"))
+      .map(async f => (await getIndustry(f.replace(/\.mdx$/, "")))!)
+  );
+}
+
+const LOCATIONS_DIR = path.join(process.cwd(), "content/locations");
+
+export type Location = {
+  slug: string;
+  title: string;
+  h1: string;
+  description: string;
+  keyword: string;
+  intro: string;
+  content: string;
+};
+
+export async function getLocation(slug: string): Promise<Location | null> {
+  try {
+    const raw = await fs.readFile(path.join(LOCATIONS_DIR, `${slug}.mdx`), "utf8");
+    const { data, content } = matter(raw);
+    return { ...data, content } as Location;
+  } catch {
+    return null;
+  }
+}
+
+export async function getAllLocations(): Promise<Location[]> {
+  const files = await fs.readdir(LOCATIONS_DIR);
+  return Promise.all(
+    files
+      .filter(f => f.endsWith(".mdx"))
+      .map(async f => (await getLocation(f.replace(/\.mdx$/, "")))!)
+  );
+}
