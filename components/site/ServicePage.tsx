@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import type { Service } from "@/lib/content";
-import { getCaseStudies } from "@/lib/content";
+import { getCaseStudies, getAllServices } from "@/lib/content";
 import { CaseStudyCard } from "./CaseStudyCard";
 import { QuoteForm } from "./QuoteForm";
 import { JsonLd } from "@/components/seo/JsonLd";
@@ -10,6 +10,8 @@ const SITE_URL = "https://gloood.in";
 
 export async function ServicePage({ service }: { service: Service }) {
   const studies = (await getCaseStudies()).slice(0, 3);
+  const allServices = await getAllServices();
+  const others = allServices.filter(x => x.slug !== service.slug);
 
   const serviceSchema = {
     "@context": "https://schema.org",
@@ -78,6 +80,22 @@ export async function ServicePage({ service }: { service: Service }) {
         <section className="mx-auto max-w-[1200px] px-8 py-16">
           <h2 className="text-3xl mb-8">Recent work</h2>
           <div className="grid gap-6 md:grid-cols-3">{studies.map(s => <CaseStudyCard key={s.slug} study={s} />)}</div>
+        </section>
+      )}
+
+      {others.length > 0 && (
+        <section className="mx-auto max-w-[1200px] px-8 py-16">
+          <h2 className="text-3xl mb-8">Other services</h2>
+          <div className="grid gap-5 md:grid-cols-3">
+            {others.map(o => (
+              <Link key={o.slug} href={`/services/${o.slug}`} className="group rounded-[var(--radius-card)] border border-[var(--color-border-subtle)] bg-[var(--color-bg-elev)] p-8 transition-all hover:border-[var(--color-accent)]">
+                <div className="text-[11px] uppercase tracking-[0.14em] text-[var(--color-accent-2)] font-display font-medium mb-3">{o.name}</div>
+                <h3 className="text-xl mb-2">{o.tagline}</h3>
+                <p className="text-sm text-[var(--color-muted)]">{o.summary}</p>
+                <div className="mt-4 text-sm font-display font-medium">Learn more →</div>
+              </Link>
+            ))}
+          </div>
         </section>
       )}
 
