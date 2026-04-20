@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { getInsights } from "@/lib/content";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { webPageSchema, breadcrumbSchema } from "@/lib/seo";
 
 export const metadata = {
   title: "Insights",
@@ -8,7 +10,18 @@ export const metadata = {
 
 export default async function InsightsIndex() {
   const insights = await getInsights();
+  const description = "Practical guides on website design, performance marketing, and growth for Indian SMBs — by the gloood team.";
   return (
+    <>
+      <JsonLd
+        data={[
+          webPageSchema({ url: "/insights", title: "Insights", description, type: "CollectionPage" }),
+          breadcrumbSchema([
+            { name: "Home", href: "/" },
+            { name: "Insights", href: "/insights" },
+          ]),
+        ]}
+      />
     <div className="mx-auto max-w-[900px] px-8 py-24">
       <h1 className="text-5xl md:text-7xl">Insights</h1>
       <p className="mt-6 max-w-xl text-[var(--color-muted)]">Practical guides on building and growing a business online in India. No fluff.</p>
@@ -26,5 +39,6 @@ export default async function InsightsIndex() {
         ))}
       </div>
     </div>
+    </>
   );
 }
