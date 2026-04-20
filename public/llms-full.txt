@@ -437,6 +437,65 @@ Eight mistakes: changing URLs without redirects; no CWV testing; removing "unsex
 
 ---
 
+# Brand Guide
+
+URL: https://gloood.in/brand
+Summary: gloood brand guidelines — logo, palette, typography, and voice.
+
+## Palette (7 tokens)
+
+- Ink — #0A0B10 — page background (primary surface; not pure black)
+- Elevated — #14161F — card / surface background
+- Border — #1F2230 — hairlines
+- Violet — #7C5CFF — primary CTA, links, focus states
+- Lime — #C8FF5E — accent for numbers, CTA hover, the trailing period in the wordmark
+- Text — #F5F5F7 — primary text
+- Muted — #8A8D9A — secondary text
+
+## Typography
+
+- Display: Avenir Black — headings and large numbers
+- Subhead / UI: Avenir Medium — labels, nav, short UI strings
+- Body: Inter — paragraphs and forms
+
+## Logo
+
+- Wordmark: lowercase "gloood" in Avenir Black with letter-spacing -0.02em
+- Mark: the trailing period "." — always in Lime #C8FF5E on dark, Violet #7C5CFF on light
+- Primary variant: white wordmark + lime period on dark (site default)
+- Inverse variant: dark wordmark #0A0B10 + violet period on light
+- Clear space equal to the cap height of the "g"
+- Minimum size: 96px wide on screen, 24mm in print
+- SVG downloads: /brand/logo-wordmark-dark.svg, /brand/logo-wordmark-light.svg
+
+## Voice and tone
+
+- Confident, pragmatic, outcome-focused
+- Direct. No fluff. No agency buzzwords ("synergy", "leverage", "best-in-class")
+- First-person plural ("we")
+- Specific numbers over vague claims
+- Indian context — ₹, Mumbai/India, GST, SMB
+
+## Do
+
+- Pair Violet with Lime sparingly; use Lime for emphasis (numbers, hover states)
+- Maintain clear space around the wordmark equal to the cap height of "g"
+- Use Ink #0A0B10 as the primary background — not pure black
+
+## Don't
+
+- Use Lime as body text (unreadable on most backgrounds)
+- Stretch, recolour, or tilt the wordmark
+- Place the wordmark on busy imagery without a dark scrim
+
+## Downloads
+
+- PDF brand guide: https://gloood.in/brand/gloood-brand-guide.pdf
+- Wordmark (dark bg): https://gloood.in/brand/logo-wordmark-dark.svg
+- Wordmark (light bg): https://gloood.in/brand/logo-wordmark-light.svg
+
+---
+
 # Contact
 
 - Email: surpreet@gloood.in

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 100" width="360" height="100">
+  <style>
+    .wm { font-family: "Avenir", "Avenir Black", sans-serif; font-weight: 900; font-size: 80px; letter-spacing: -1.6px; }
+  </style>
+  <text x="0" y="76" class="wm" fill="#0A0B10">gloood</text>
+  <text x="294" y="76" class="wm" fill="#7C5CFF">.</text>
+</svg>
