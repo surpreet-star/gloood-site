@@ -6,6 +6,7 @@ import { CaseStudyCard } from "@/components/site/CaseStudyCard";
 import { ProcessStrip } from "@/components/site/ProcessStrip";
 import { TestimonialPull } from "@/components/site/TestimonialPull";
 import { CTASection } from "@/components/site/CTASection";
+import { HomeFAQ } from "@/components/site/HomeFAQ";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { getCaseStudies } from "@/lib/content";
 
@@ -44,6 +45,7 @@ export default async function Home() {
       <Marquee />
       <TestimonialPull />
       <ProcessStrip />
+      <HomeFAQ />
       <CTASection />
     </>
   );
