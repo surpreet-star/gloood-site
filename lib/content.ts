@@ -13,6 +13,7 @@ export type CaseStudy = {
   client: string;
   tags: CaseStudyTag[];
   year: number;
+  publish_date?: string;
   hero_image: string;
   excerpt: string;
   metrics: { value: string; label: string }[];

@@ -50,7 +50,8 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
     description: s.excerpt,
     author: { "@type": "Organization", name: "gloood", url: SITE_URL },
     publisher: { "@id": `${SITE_URL}/#organization` },
-    datePublished: `${s.year}-01-01`,
+    datePublished: s.publish_date ?? `${s.year}-01-01`,
+    dateModified: s.publish_date ?? `${s.year}-01-01`,
     mainEntityOfPage: `${SITE_URL}/work/${s.slug}`,
     image: `${SITE_URL}${s.hero_image}`,
   };
