@@ -66,7 +66,12 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
     datePublished: s.publish_date ?? `${s.year}-01-01`,
     dateModified: s.publish_date ?? `${s.year}-01-01`,
     mainEntityOfPage: `${SITE_URL}/work/${s.slug}`,
-    image: `${SITE_URL}${s.hero_image}`,
+    image: {
+      "@type": "ImageObject",
+      url: `${SITE_URL}${s.hero_image}`,
+      width: 1600,
+      height: 900,
+    },
     ...(s.meta?.industry ? { about: { "@type": "Thing", name: s.meta.industry } } : {}),
     ...(mentions.length > 0 ? { mentions } : {}),
   };

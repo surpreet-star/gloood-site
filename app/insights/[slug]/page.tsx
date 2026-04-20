@@ -39,6 +39,7 @@ export default async function InsightPage({ params }: { params: Promise<{ slug: 
   const i = await getInsight(slug);
   if (!i) notFound();
 
+  const og = `${SITE_URL}/api/og?title=${encodeURIComponent(i.title)}&subtitle=${encodeURIComponent(i.description)}`;
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -49,6 +50,12 @@ export default async function InsightPage({ params }: { params: Promise<{ slug: 
     datePublished: i.publish_date,
     dateModified: i.publish_date,
     mainEntityOfPage: `${SITE_URL}/insights/${i.slug}`,
+    image: {
+      "@type": "ImageObject",
+      url: og,
+      width: 1200,
+      height: 630,
+    },
   };
   const breadcrumb = {
     "@context": "https://schema.org",
