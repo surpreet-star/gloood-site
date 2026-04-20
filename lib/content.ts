@@ -18,6 +18,15 @@ export type CaseStudy = {
   excerpt: string;
   metrics: { value: string; label: string }[];
   featured?: boolean;
+  meta?: {
+    industry?: string;
+    location?: string;
+    services?: string[];
+    tech_stack?: string[];
+    timeline?: string;
+    team_size?: number;
+    channels?: string[];
+  };
   content: string;
 };
 

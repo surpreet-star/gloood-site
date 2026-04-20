@@ -52,6 +52,10 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
   });
   const related = sameTagFirst.slice(0, 3);
 
+  const mentions = [
+    ...(s.meta?.services ?? []).map(name => ({ "@type": "Service", name })),
+    ...(s.meta?.tech_stack ?? []).map(name => ({ "@type": "SoftwareApplication", name })),
+  ];
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -63,6 +67,8 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
     dateModified: s.publish_date ?? `${s.year}-01-01`,
     mainEntityOfPage: `${SITE_URL}/work/${s.slug}`,
     image: `${SITE_URL}${s.hero_image}`,
+    ...(s.meta?.industry ? { about: { "@type": "Thing", name: s.meta.industry } } : {}),
+    ...(mentions.length > 0 ? { mentions } : {}),
   };
 
   const breadcrumbSchema = {
@@ -101,6 +107,34 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
             {new Date(s.publish_date ?? `${s.year}-01-01`).toLocaleDateString("en-IN", { year: "numeric", month: "long", day: "numeric" })}
           </time>
         </div>
+        {s.meta && (
+          <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-6 py-6 border-y border-[var(--color-border-subtle)]">
+            {s.meta.industry && (
+              <div>
+                <div className="text-xs uppercase tracking-widest text-[var(--color-muted)] font-display font-medium">Industry</div>
+                <div className="mt-1 text-sm">{s.meta.industry}</div>
+              </div>
+            )}
+            {s.meta.location && (
+              <div>
+                <div className="text-xs uppercase tracking-widest text-[var(--color-muted)] font-display font-medium">Location</div>
+                <div className="mt-1 text-sm">{s.meta.location}</div>
+              </div>
+            )}
+            {s.meta.timeline && (
+              <div>
+                <div className="text-xs uppercase tracking-widest text-[var(--color-muted)] font-display font-medium">Timeline</div>
+                <div className="mt-1 text-sm">{s.meta.timeline}</div>
+              </div>
+            )}
+            {s.meta.services && s.meta.services.length > 0 && (
+              <div>
+                <div className="text-xs uppercase tracking-widest text-[var(--color-muted)] font-display font-medium">Services</div>
+                <div className="mt-1 text-sm">{s.meta.services.join(", ")}</div>
+              </div>
+            )}
+          </div>
+        )}
         <div className="mt-12 grid grid-cols-3 gap-8 py-10 border-y border-[var(--color-border-subtle)]">
           {s.metrics.map(m => (
             <div key={m.label}>
