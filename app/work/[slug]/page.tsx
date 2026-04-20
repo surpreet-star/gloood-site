@@ -3,6 +3,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getCaseStudy, getCaseStudies } from "@/lib/content";
 import { CTASection } from "@/components/site/CTASection";
+import { CaseStudyCard } from "@/components/site/CaseStudyCard";
 import { JsonLd } from "@/components/seo/JsonLd";
 
 const SITE_URL = "https://gloood.in";
@@ -42,6 +43,14 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
   const { slug } = await params;
   const s = await getCaseStudy(slug);
   if (!s) notFound();
+
+  const allOthers = (await getCaseStudies()).filter(c => c.slug !== s.slug);
+  const sameTagFirst = allOthers.sort((a, b) => {
+    const aShares = a.tags.some(t => s.tags.includes(t)) ? 0 : 1;
+    const bShares = b.tags.some(t => s.tags.includes(t)) ? 0 : 1;
+    return aShares - bShares;
+  });
+  const related = sameTagFirst.slice(0, 3);
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -104,6 +113,14 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
           <MDXRemote source={s.content} />
         </div>
       </article>
+      {related.length > 0 && (
+        <section className="mx-auto max-w-[1200px] px-8 py-16">
+          <h2 className="text-3xl mb-8">More work</h2>
+          <div className="grid gap-6 md:grid-cols-3">
+            {related.map(r => <CaseStudyCard key={r.slug} study={r} />)}
+          </div>
+        </section>
+      )}
       <CTASection />
     </>
   );
